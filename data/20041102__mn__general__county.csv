@@ -1,0 +1,368 @@
+county_code,county,office,district,party,candidate,votes,pct
+01,Aitkin,President,,DFL,John Kerry,665,42.79
+01,Aitkin,President,,GP,David Cobb,1,0.06
+01,Aitkin,President,,IND,Ralph Nader,1,0.06
+01,Aitkin,President,,LIB,Michael Badnarik,21,1.35
+01,Aitkin,President,,R,George W. Bush,866,55.73
+01,Aitkin,State House,,DFL,,692,45.59
+01,Aitkin,State House,,IND,,1,0.07
+01,Aitkin,State House,,R,,825,54.35
+02,Anoka,President,,DFL,John Kerry,4322,48.43
+02,Anoka,President,,GP,David Cobb,8,0.09
+02,Anoka,President,,IND,Ralph Nader,10,0.11
+02,Anoka,President,,LIB,Michael Badnarik,62,0.69
+02,Anoka,President,,R,George W. Bush,4523,50.68
+02,Anoka,State House,,DFL,,3263,38.80
+02,Anoka,State House,,IND,,9,0.11
+02,Anoka,State House,,R,,5138,61.09
+03,Becker,President,,DFL,John Kerry,1549,34.55
+03,Becker,President,,GP,David Cobb,4,0.09
+03,Becker,President,,IND,Ralph Nader,7,0.16
+03,Becker,President,,LIB,Michael Badnarik,31,0.69
+03,Becker,President,,R,George W. Bush,2892,64.51
+03,Becker,State House,,DFL,,1608,36.87
+03,Becker,State House,,IND,,3,0.07
+03,Becker,State House,,R,,2750,63.06
+04,Beltrami,President,,DFL,John Kerry,22,45.83
+04,Beltrami,President,,R,George W. Bush,26,54.17
+04,Beltrami,State House,,DFL,,29,60.42
+04,Beltrami,State House,,R,,19,39.58
+05,Benton,President,,DFL,John Kerry,154,30.14
+05,Benton,President,,GP,David Cobb,2,0.39
+05,Benton,President,,R,George W. Bush,355,69.47
+05,Benton,State House,,R,,316,100.00
+07,Blue Earth,President,,DFL,John Kerry,819,39.72
+07,Blue Earth,President,,GP,David Cobb,2,0.10
+07,Blue Earth,President,,IND,Ralph Nader,1,0.05
+07,Blue Earth,President,,LIB,Michael Badnarik,14,0.68
+07,Blue Earth,President,,R,George W. Bush,1226,59.46
+07,Blue Earth,State House,,DFL,,625,31.00
+07,Blue Earth,State House,,IND,,1,0.05
+07,Blue Earth,State House,,R,,1390,68.95
+09,Carlton,President,,DFL,John Kerry,283,69.36
+09,Carlton,President,,IND,Ralph Nader,1,0.25
+09,Carlton,President,,LIB,Michael Badnarik,1,0.25
+09,Carlton,President,,R,George W. Bush,123,30.15
+09,Carlton,State House,,DFL,,277,73.09
+09,Carlton,State House,,IND,,1,0.26
+09,Carlton,State House,,R,,101,26.65
+10,Carver,President,,DFL,John Kerry,518,37.67
+10,Carver,President,,GP,David Cobb,2,0.15
+10,Carver,President,,IND,Ralph Nader,2,0.15
+10,Carver,President,,LIB,Michael Badnarik,14,1.02
+10,Carver,President,,R,George W. Bush,839,61.02
+10,Carver,State House,,IND,,4,0.49
+10,Carver,State House,,R,,819,99.51
+14,Clay,President,,DFL,John Kerry,22,33.33
+14,Clay,President,,LIB,Michael Badnarik,1,1.52
+14,Clay,President,,R,George W. Bush,43,65.15
+14,Clay,State House,,DFL,,28,44.44
+14,Clay,State House,,R,,35,55.56
+15,Clearwater,President,,DFL,John Kerry,566,42.08
+15,Clearwater,President,,GP,David Cobb,1,0.07
+15,Clearwater,President,,IND,Ralph Nader,4,0.30
+15,Clearwater,President,,LIB,Michael Badnarik,10,0.74
+15,Clearwater,President,,R,George W. Bush,764,56.80
+15,Clearwater,State House,,DFL,,554,43.15
+15,Clearwater,State House,,IND,,1,0.08
+15,Clearwater,State House,,R,,729,56.78
+16,Cook,President,,DFL,John Kerry,168,52.01
+16,Cook,President,,LIB,Michael Badnarik,2,0.62
+16,Cook,President,,R,George W. Bush,153,47.37
+16,Cook,State House,,DFL,,259,81.96
+16,Cook,State House,,IND,,2,0.63
+16,Cook,State House,,R,,55,17.41
+17,Cottonwood,President,,DFL,John Kerry,456,41.30
+17,Cottonwood,President,,GP,David Cobb,1,0.09
+17,Cottonwood,President,,IND,Ralph Nader,1,0.09
+17,Cottonwood,President,,LIB,Michael Badnarik,7,0.63
+17,Cottonwood,President,,R,George W. Bush,639,57.88
+17,Cottonwood,State House,,DFL,,449,40.78
+17,Cottonwood,State House,,IND,,1,0.09
+17,Cottonwood,State House,,R,,651,59.13
+18,Crow Wing,President,,DFL,John Kerry,294,35.38
+18,Crow Wing,President,,GP,David Cobb,2,0.24
+18,Crow Wing,President,,LIB,Michael Badnarik,4,0.48
+18,Crow Wing,President,,R,George W. Bush,531,63.90
+18,Crow Wing,State House,,DFL,,367,44.48
+18,Crow Wing,State House,,IND,,32,3.88
+18,Crow Wing,State House,,R,,426,51.64
+19,Dakota,President,,DFL,John Kerry,105,52.24
+19,Dakota,President,,LIB,Michael Badnarik,1,0.50
+19,Dakota,President,,R,George W. Bush,95,47.26
+19,Dakota,State House,,DFL,,111,59.04
+19,Dakota,State House,,R,,77,40.96
+21,Douglas,President,,DFL,John Kerry,178,38.95
+21,Douglas,President,,LIB,Michael Badnarik,4,0.88
+21,Douglas,President,,R,George W. Bush,275,60.18
+21,Douglas,State House,,DFL,,138,31.94
+21,Douglas,State House,,R,,294,68.06
+22,Faribault,President,,DFL,John Kerry,4814,52.68
+22,Faribault,President,,GP,David Cobb,19,0.21
+22,Faribault,President,,IND,Ralph Nader,7,0.08
+22,Faribault,President,,LIB,Michael Badnarik,103,1.13
+22,Faribault,President,,R,George W. Bush,4195,45.91
+22,Faribault,State House,,DFL,,4760,52.49
+22,Faribault,State House,,IND,,328,3.62
+22,Faribault,State House,,R,,3981,43.90
+23,Fillmore,President,,DFL,John Kerry,87,31.52
+23,Fillmore,President,,GP,David Cobb,2,0.72
+23,Fillmore,President,,IND,Ralph Nader,2,0.72
+23,Fillmore,President,,LIB,Michael Badnarik,1,0.36
+23,Fillmore,President,,R,George W. Bush,184,66.67
+23,Fillmore,State House,,DFL,,89,33.33
+23,Fillmore,State House,,IND,,2,0.75
+23,Fillmore,State House,,R,,176,65.92
+24,Freeborn,President,,DFL,John Kerry,193,59.20
+24,Freeborn,President,,IND,Ralph Nader,1,0.31
+24,Freeborn,President,,LIB,Michael Badnarik,1,0.31
+24,Freeborn,President,,R,George W. Bush,131,40.18
+24,Freeborn,State House,,DFL,,122,37.77
+24,Freeborn,State House,,IND,,18,5.57
+24,Freeborn,State House,,R,,183,56.66
+25,Goodhue,President,,DFL,John Kerry,229,30.45
+25,Goodhue,President,,IND,Ralph Nader,1,0.13
+25,Goodhue,President,,LIB,Michael Badnarik,6,0.80
+25,Goodhue,President,,R,George W. Bush,516,68.62
+25,Goodhue,State House,,DFL,,227,30.63
+25,Goodhue,State House,,IND,,2,0.27
+25,Goodhue,State House,,R,,512,69.10
+26,Grant,President,,DFL,John Kerry,1148,40.51
+26,Grant,President,,GP,David Cobb,6,0.21
+26,Grant,President,,LIB,Michael Badnarik,22,0.78
+26,Grant,President,,R,George W. Bush,1658,58.50
+26,Grant,State House,,DFL,,1119,40.48
+26,Grant,State House,,IND,,3,0.11
+26,Grant,State House,,R,,1642,59.41
+28,Houston,President,,DFL,John Kerry,349,44.86
+28,Houston,President,,GP,David Cobb,3,0.39
+28,Houston,President,,LIB,Michael Badnarik,8,1.03
+28,Houston,President,,R,George W. Bush,418,53.73
+28,Houston,State House,,DFL,,464,62.12
+28,Houston,State House,,IND,,1,0.13
+28,Houston,State House,,R,,282,37.75
+29,Hubbard,President,,DFL,John Kerry,195,37.94
+29,Hubbard,President,,GP,David Cobb,1,0.19
+29,Hubbard,President,,LIB,Michael Badnarik,8,1.56
+29,Hubbard,President,,R,George W. Bush,310,60.31
+29,Hubbard,State House,,DFL,,240,48.00
+29,Hubbard,State House,,R,,260,52.00
+30,Isanti,President,,DFL,John Kerry,1195,40.20
+30,Isanti,President,,GP,David Cobb,6,0.20
+30,Isanti,President,,IND,Ralph Nader,5,0.17
+30,Isanti,President,,LIB,Michael Badnarik,18,0.61
+30,Isanti,President,,R,George W. Bush,1749,58.83
+30,Isanti,State House,,DFL,,1350,47.07
+30,Isanti,State House,,IND,,7,0.24
+30,Isanti,State House,,R,,1511,52.68
+31,Itasca,President,,DFL,John Kerry,32,39.51
+31,Itasca,President,,LIB,Michael Badnarik,1,1.23
+31,Itasca,President,,R,George W. Bush,48,59.26
+31,Itasca,State House,,DFL,,34,42.50
+31,Itasca,State House,,R,,46,57.50
+32,Jackson,President,,DFL,John Kerry,1082,47.31
+32,Jackson,President,,GP,David Cobb,2,0.09
+32,Jackson,President,,IND,Ralph Nader,1,0.04
+32,Jackson,President,,LIB,Michael Badnarik,18,0.79
+32,Jackson,President,,R,George W. Bush,1184,51.77
+32,Jackson,State House,,DFL,,902,44.92
+32,Jackson,State House,,IND,,2,0.10
+32,Jackson,State House,,R,,1104,54.98
+33,Kanabec,President,,DFL,John Kerry,160,39.31
+33,Kanabec,President,,LIB,Michael Badnarik,4,0.98
+33,Kanabec,President,,R,George W. Bush,243,59.71
+33,Kanabec,State House,,DFL,,179,43.98
+33,Kanabec,State House,,IND,,1,0.25
+33,Kanabec,State House,,R,,227,55.77
+34,Kandiyohi,President,,DFL,John Kerry,257,40.86
+34,Kandiyohi,President,,GP,David Cobb,1,0.16
+34,Kandiyohi,President,,IND,Ralph Nader,1,0.16
+34,Kandiyohi,President,,LIB,Michael Badnarik,9,1.43
+34,Kandiyohi,President,,R,George W. Bush,361,57.39
+34,Kandiyohi,State House,,DFL,,334,52.93
+34,Kandiyohi,State House,,R,,297,47.07
+38,Lake,President,,DFL,John Kerry,353,32.33
+38,Lake,President,,GP,David Cobb,5,0.46
+38,Lake,President,,LIB,Michael Badnarik,7,0.64
+38,Lake,President,,R,George W. Bush,727,66.58
+38,Lake,State House,,DFL,,313,28.95
+38,Lake,State House,,IND,,1,0.09
+38,Lake,State House,,R,,767,70.95
+40,Le Sueur,President,,DFL,John Kerry,902,45.58
+40,Le Sueur,President,,GP,David Cobb,3,0.15
+40,Le Sueur,President,,LIB,Michael Badnarik,16,0.81
+40,Le Sueur,President,,R,George W. Bush,1058,53.46
+40,Le Sueur,State House,,DFL,,1012,51.74
+40,Le Sueur,State House,,IND,,1,0.05
+40,Le Sueur,State House,,R,,943,48.21
+41,Lincoln,President,,DFL,John Kerry,81,41.12
+41,Lincoln,President,,IND,Ralph Nader,2,1.02
+41,Lincoln,President,,LIB,Michael Badnarik,1,0.51
+41,Lincoln,President,,R,George W. Bush,113,57.36
+41,Lincoln,State House,,DFL,,82,42.05
+41,Lincoln,State House,,R,,113,57.95
+44,Mahnomen,President,,DFL,John Kerry,317,53.73
+44,Mahnomen,President,,GP,David Cobb,1,0.17
+44,Mahnomen,President,,LIB,Michael Badnarik,4,0.68
+44,Mahnomen,President,,R,George W. Bush,268,45.42
+44,Mahnomen,State House,,DFL,,408,70.71
+44,Mahnomen,State House,,R,,169,29.29
+45,Marshall,President,,DFL,John Kerry,2800,43.24
+45,Marshall,President,,GP,David Cobb,8,0.12
+45,Marshall,President,,IND,Ralph Nader,4,0.06
+45,Marshall,President,,LIB,Michael Badnarik,50,0.77
+45,Marshall,President,,R,George W. Bush,3614,55.81
+45,Marshall,State House,,DFL,,2537,39.50
+45,Marshall,State House,,IND,,16,0.25
+45,Marshall,State House,,R,,3870,60.25
+46,Martin,President,,DFL,John Kerry,52,22.81
+46,Martin,President,,LIB,Michael Badnarik,1,0.44
+46,Martin,President,,R,George W. Bush,175,76.75
+46,Martin,State House,,DFL,,56,25.00
+46,Martin,State House,,R,,168,75.00
+48,Morrison,President,,DFL,John Kerry,31,28.70
+48,Morrison,President,,LIB,Michael Badnarik,3,2.78
+48,Morrison,President,,R,George W. Bush,74,68.52
+48,Morrison,State House,,DFL,,45,42.45
+48,Morrison,State House,,IND,,1,0.94
+48,Morrison,State House,,R,,60,56.60
+50,Murray,President,,DFL,John Kerry,52,47.71
+50,Murray,President,,LIB,Michael Badnarik,1,0.92
+50,Murray,President,,R,George W. Bush,56,51.38
+50,Murray,State House,,DFL,,47,42.73
+50,Murray,State House,,R,,63,57.27
+51,Nicollet,President,,DFL,John Kerry,285,34.09
+51,Nicollet,President,,GP,David Cobb,2,0.24
+51,Nicollet,President,,LIB,Michael Badnarik,4,0.48
+51,Nicollet,President,,R,George W. Bush,545,65.19
+51,Nicollet,State House,,DFL,,254,30.46
+51,Nicollet,State House,,IND,,31,3.72
+51,Nicollet,State House,,R,,549,65.83
+53,Norman,President,,DFL,John Kerry,142,47.02
+53,Norman,President,,GP,David Cobb,1,0.33
+53,Norman,President,,LIB,Michael Badnarik,4,1.32
+53,Norman,President,,R,George W. Bush,155,51.32
+53,Norman,State House,,DFL,,164,55.59
+53,Norman,State House,,R,,131,44.41
+55,Otter Tail,President,,DFL,John Kerry,210,32.46
+55,Otter Tail,President,,IND,Ralph Nader,1,0.15
+55,Otter Tail,President,,LIB,Michael Badnarik,6,0.93
+55,Otter Tail,President,,R,George W. Bush,430,66.46
+55,Otter Tail,State House,,DFL,,199,31.34
+55,Otter Tail,State House,,R,,436,68.66
+57,Pine,President,,DFL,John Kerry,360,42.76
+57,Pine,President,,GP,David Cobb,2,0.24
+57,Pine,President,,IND,Ralph Nader,2,0.24
+57,Pine,President,,LIB,Michael Badnarik,7,0.83
+57,Pine,President,,R,George W. Bush,471,55.94
+57,Pine,State House,,DFL,,424,51.02
+57,Pine,State House,,IND,,2,0.24
+57,Pine,State House,,R,,405,48.74
+58,Pipestone,President,,DFL,John Kerry,926,45.82
+58,Pipestone,President,,GP,David Cobb,1,0.05
+58,Pipestone,President,,IND,Ralph Nader,1,0.05
+58,Pipestone,President,,LIB,Michael Badnarik,16,0.79
+58,Pipestone,President,,R,George W. Bush,1077,53.29
+58,Pipestone,State House,,DFL,,1045,52.88
+58,Pipestone,State House,,IND,,3,0.15
+58,Pipestone,State House,,R,,928,46.96
+62,Ramsey,President,,DFL,John Kerry,4517,39.21
+62,Ramsey,President,,GP,David Cobb,15,0.13
+62,Ramsey,President,,IND,Ralph Nader,5,0.04
+62,Ramsey,President,,LIB,Michael Badnarik,67,0.58
+62,Ramsey,President,,R,George W. Bush,6917,60.04
+62,Ramsey,State House,,DFL,,3856,35.54
+62,Ramsey,State House,,IND,,9,0.08
+62,Ramsey,State House,,R,,6985,64.38
+65,Renville,President,,DFL,John Kerry,287,48.81
+65,Renville,President,,LIB,Michael Badnarik,7,1.19
+65,Renville,President,,R,George W. Bush,294,50.00
+65,Renville,State House,,DFL,,305,51.26
+65,Renville,State House,,R,,290,48.74
+66,Rice,President,,DFL,John Kerry,228,39.31
+66,Rice,President,,GP,David Cobb,3,0.52
+66,Rice,President,,LIB,Michael Badnarik,8,1.38
+66,Rice,President,,R,George W. Bush,341,58.79
+66,Rice,State House,,DFL,,208,37.89
+66,Rice,State House,,R,,341,62.11
+67,Rock,President,,DFL,John Kerry,35,45.45
+67,Rock,President,,LIB,Michael Badnarik,1,1.30
+67,Rock,President,,R,George W. Bush,41,53.25
+67,Rock,State House,,DFL,,37,47.44
+67,Rock,State House,,R,,41,52.56
+68,Roseau,President,,DFL,John Kerry,430,31.20
+68,Roseau,President,,GP,David Cobb,1,0.07
+68,Roseau,President,,LIB,Michael Badnarik,13,0.94
+68,Roseau,President,,R,George W. Bush,934,67.78
+68,Roseau,State House,,DFL,,275,20.07
+68,Roseau,State House,,R,,1095,79.93
+70,Scott,President,,DFL,John Kerry,44,49.44
+70,Scott,President,,LIB,Michael Badnarik,1,1.12
+70,Scott,President,,R,George W. Bush,44,49.44
+70,Scott,State House,,DFL,,22,24.18
+70,Scott,State House,,R,,69,75.82
+72,Sibley,President,,DFL,John Kerry,78,40.62
+72,Sibley,President,,LIB,Michael Badnarik,1,0.52
+72,Sibley,President,,R,George W. Bush,113,58.85
+72,Sibley,State House,,DFL,,77,39.90
+72,Sibley,State House,,IND,,8,4.15
+72,Sibley,State House,,R,,108,55.96
+75,Stevens,President,,DFL,John Kerry,25,44.64
+75,Stevens,President,,R,George W. Bush,31,55.36
+75,Stevens,State House,,DFL,,10,18.18
+75,Stevens,State House,,R,,45,81.82
+77,Todd,President,,DFL,John Kerry,297,37.50
+77,Todd,President,,LIB,Michael Badnarik,8,1.01
+77,Todd,President,,R,George W. Bush,487,61.49
+77,Todd,State House,,DFL,,354,45.04
+77,Todd,State House,,R,,432,54.96
+78,Traverse,President,,DFL,John Kerry,87,43.07
+78,Traverse,President,,GP,David Cobb,1,0.50
+78,Traverse,President,,LIB,Michael Badnarik,1,0.50
+78,Traverse,President,,R,George W. Bush,113,55.94
+78,Traverse,State House,,DFL,,101,49.75
+78,Traverse,State House,,IND,,6,2.96
+78,Traverse,State House,,R,,96,47.29
+79,Wabasha,President,,DFL,John Kerry,843,59.37
+79,Wabasha,President,,GP,David Cobb,4,0.28
+79,Wabasha,President,,IND,Ralph Nader,3,0.21
+79,Wabasha,President,,LIB,Michael Badnarik,15,1.06
+79,Wabasha,President,,R,George W. Bush,555,39.08
+79,Wabasha,State House,,DFL,,782,56.75
+79,Wabasha,State House,,R,,596,43.25
+80,Wadena,President,,DFL,John Kerry,969,37.87
+80,Wadena,President,,GP,David Cobb,3,0.12
+80,Wadena,President,,IND,Ralph Nader,1,0.04
+80,Wadena,President,,LIB,Michael Badnarik,17,0.66
+80,Wadena,President,,R,George W. Bush,1569,61.31
+80,Wadena,State House,,DFL,,860,34.76
+80,Wadena,State House,,IND,,3,0.12
+80,Wadena,State House,,R,,1611,65.12
+81,Waseca,President,,DFL,John Kerry,1899,45.77
+81,Waseca,President,,GP,David Cobb,7,0.17
+81,Waseca,President,,IND,Ralph Nader,5,0.12
+81,Waseca,President,,LIB,Michael Badnarik,38,0.92
+81,Waseca,President,,R,George W. Bush,2200,53.02
+81,Waseca,State House,,DFL,,2043,49.31
+81,Waseca,State House,,IND,,11,0.27
+81,Waseca,State House,,R,,2089,50.42
+82,Washington,President,,DFL,John Kerry,200,38.61
+82,Washington,President,,LIB,Michael Badnarik,4,0.77
+82,Washington,President,,R,George W. Bush,314,60.62
+82,Washington,State House,,DFL,,185,35.78
+82,Washington,State House,,IND,,1,0.19
+82,Washington,State House,,R,,331,64.02
+85,Winona,President,,DFL,John Kerry,8448,57.29
+85,Winona,President,,GP,David Cobb,28,0.19
+85,Winona,President,,IND,Ralph Nader,22,0.15
+85,Winona,President,,LIB,Michael Badnarik,175,1.19
+85,Winona,President,,R,George W. Bush,6074,41.19
+85,Winona,State House,,DFL,,9692,69.18
+85,Winona,State House,,IND,,24,0.17
+85,Winona,State House,,R,,4293,30.64
+86,Wright,President,,DFL,John Kerry,69,53.49
+86,Wright,President,,GP,David Cobb,1,0.78
+86,Wright,President,,LIB,Michael Badnarik,1,0.78
+86,Wright,President,,R,George W. Bush,58,44.96
+86,Wright,State House,,DFL,,84,66.14
+86,Wright,State House,,R,,43,33.86
