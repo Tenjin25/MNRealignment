@@ -204,6 +204,8 @@ def convert_2000(input_file, output_file):
     
     with open(input_file, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
+        # Strip column names to remove leading/trailing spaces
+        reader.fieldnames = [name.strip() if name else name for name in reader.fieldnames]
         
         for row in reader:
             # Use CC (county code) column from aligned file
@@ -392,6 +394,37 @@ def convert_2002(input_file, output_file):
     write_results(county_results, 2002, output_file)
     print(f"  ✓ Created: {output_file}")
 
+def convert_2004(input_file, output_file):
+    """Convert 2004 election data from precinct-level Results.csv format"""
+    print(f"\nProcessing 2004: {os.path.basename(input_file)}")
+    
+    county_results = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    
+    with open(input_file, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        
+        for row in reader:
+            # Use CC (County Code) column - it's already in the right format (01, 02, etc.)
+            county_code = row.get('CC', '').strip().zfill(2)
+            if not county_code or county_code not in FIPS_TO_COUNTY:
+                continue
+            
+            county = FIPS_TO_COUNTY[county_code]
+            
+            # President: USPresGP, USPresR, USPresDFL, USPresSE, USPresSW, USPresCF, USPresBL, USPresC, USPresL
+            for party, col in [('R', 'USPresR'), ('DFL', 'USPresDFL'), ('GP', 'USPresGP'), 
+                              ('SE', 'USPresSE'), ('SWP', 'USPresSW'), ('CF', 'USPresCF'), 
+                              ('BL', 'USPresBL'), ('C', 'USPresC'), ('LIB', 'USPresL')]:
+                try:
+                    votes = int(row.get(col, '0') or '0')
+                    if votes > 0:
+                        county_results[county]['President'][party] += votes
+                except (ValueError, TypeError):
+                    continue
+    
+    write_results(county_results, 2004, output_file)
+    print(f"  ✓ Created: {output_file}")
+
 def convert_2008(input_file, output_file):
     """Convert 2008 election data from Results.csv format"""
     print(f"\nProcessing 2008: {os.path.basename(input_file)}")
@@ -402,8 +435,8 @@ def convert_2008(input_file, output_file):
         reader = csv.DictReader(f)
         
         for row in reader:
-            # Get county ID and map to county name
-            county_id = row.get('CountyID', '').strip()
+            # Get county ID and map to county name (needs zero-padding: "1" -> "01")
+            county_id = row.get('CountyID', '').strip().zfill(2)
             if not county_id or county_id not in FIPS_TO_COUNTY:
                 continue
             
@@ -633,6 +666,15 @@ def convert_2010_aligned(input_file, output_file):
                 except (ValueError, KeyError):
                     continue
             
+            # Attorney General
+            for party, col in [('R', 'ATGENR'), ('DFL', 'ATGENDFL'), ('IND', 'ATGENIP'), ('TRP', 'ATGENTRP')]:
+                try:
+                    votes = int(row.get(col, '0').strip() or '0')
+                    if votes > 0:
+                        county_results[county]['Attorney General'][party] += votes
+                except (ValueError, KeyError):
+                    continue
+            
             # Secretary of State
             for party, col in [('R', 'SOSR'), ('DFL', 'SOSDFL'), ('IND', 'SOSIP')]:
                 try:
@@ -808,6 +850,13 @@ if __name__ == "__main__":
         convert_2002_aligned(
             os.path.join(data_dir, '2002_general_results - Aligned Results.csv'),
             os.path.join(data_dir, '20021105__mn__general__county.csv')
+        )
+    
+    # 2004
+    if os.path.exists(os.path.join(data_dir, '2004_general_results.csv')):
+        convert_2004(
+            os.path.join(data_dir, '2004_general_results.csv'),
+            os.path.join(data_dir, '20041102__mn__general__county.csv')
         )
     
     # 2006

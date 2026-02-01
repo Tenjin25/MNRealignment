@@ -128,6 +128,7 @@ def normalize_office_name(office):
     office_map = {
         'President': 'presidential',
         'U.S. Senate': 'us_senate',
+        'U.S. Senate Special': 'us_senate_special',
         'Governor': 'governor',
         'Secretary of State': 'secretary_of_state',
         'Attorney General': 'attorney_general',
@@ -247,15 +248,25 @@ def process_election_files():
             for row in reader:
                 county = row['county']
                 office = row['office']
+                district = row.get('district', '')  # Get district column if it exists
                 party = row['party']
                 candidate = row['candidate']
                 votes = int(row['votes'])
+                
+                # Normalize office names
+                if 'Governor' in office and 'Lt' in office:
+                    office = 'Governor'  # "Governor & Lt Governor" -> "Governor"
                 
                 # Only include statewide executive offices, US Senate, and President
                 allowed_offices = ['President', 'U.S. Senate', 'Governor', 'Secretary of State', 
                                  'Attorney General', 'State Auditor']
                 if office not in allowed_offices:
                     continue
+                
+                # Handle 2018 special Senate election (Unexpired Term)
+                # Treat it as a separate office so both contests appear
+                if office == 'U.S. Senate' and district == 'Unexpired Term':
+                    office = 'U.S. Senate Special'
                 
                 # Normalize party names - IR (Independent-Republican) should be R
                 if party == 'IR':

@@ -1,4 +1,112 @@
 county_code,county,office,district,party,candidate,votes,pct
+01,Aitkin,President,,CP,,22,0.23
+01,Aitkin,President,,DFL,Barack Obama,4595,48.96
+01,Aitkin,President,,GP,Cynthia McKinney,16,0.17
+01,Aitkin,President,,IND,Ralph Nader,132,1.41
+01,Aitkin,President,,LIB,Bob Barr,26,0.28
+01,Aitkin,President,,R,John McCain,4589,48.90
+01,Aitkin,President,,SWP,,5,0.05
+01,Aitkin,U.S. Senate,,CP,,32,0.34
+01,Aitkin,U.S. Senate,,DFL,Al Franken,3893,41.63
+01,Aitkin,U.S. Senate,,IND,Dean Barkley,1770,18.93
+01,Aitkin,U.S. Senate,,LIB,,40,0.43
+01,Aitkin,U.S. Senate,,R,Norm Coleman,3617,38.68
+02,Anoka,President,,CP,,390,0.21
+02,Anoka,President,,DFL,Barack Obama,86976,47.89
+02,Anoka,President,,GP,Cynthia McKinney,322,0.18
+02,Anoka,President,,IND,Ralph Nader,1954,1.08
+02,Anoka,President,,LIB,Bob Barr,594,0.33
+02,Anoka,President,,R,John McCain,91357,50.30
+02,Anoka,President,,SWP,,23,0.01
+02,Anoka,U.S. Senate,,CP,,536,0.30
+02,Anoka,U.S. Senate,,DFL,Al Franken,66800,36.92
+02,Anoka,U.S. Senate,,IND,Dean Barkley,30504,16.86
+02,Anoka,U.S. Senate,,LIB,,771,0.43
+02,Anoka,U.S. Senate,,R,Norm Coleman,82308,45.49
+03,Becker,President,,CP,,37,0.22
+03,Becker,President,,DFL,Barack Obama,7687,45.46
+03,Becker,President,,GP,Cynthia McKinney,35,0.21
+03,Becker,President,,IND,Ralph Nader,243,1.44
+03,Becker,President,,LIB,Bob Barr,47,0.28
+03,Becker,President,,R,John McCain,8851,52.34
+03,Becker,President,,SWP,,10,0.06
+03,Becker,U.S. Senate,,CP,,70,0.42
+03,Becker,U.S. Senate,,DFL,Al Franken,6016,35.71
+03,Becker,U.S. Senate,,IND,Dean Barkley,2226,13.21
+03,Becker,U.S. Senate,,LIB,,100,0.59
+03,Becker,U.S. Senate,,R,Norm Coleman,8437,50.07
+04,Beltrami,President,,CP,,58,0.26
+04,Beltrami,President,,DFL,Barack Obama,12019,54.20
+04,Beltrami,President,,GP,Cynthia McKinney,46,0.21
+04,Beltrami,President,,IND,Ralph Nader,218,0.98
+04,Beltrami,President,,LIB,Bob Barr,62,0.28
+04,Beltrami,President,,R,John McCain,9762,44.02
+04,Beltrami,President,,SWP,,9,0.04
+04,Beltrami,U.S. Senate,,CP,,94,0.43
+04,Beltrami,U.S. Senate,,DFL,Al Franken,10033,45.63
+04,Beltrami,U.S. Senate,,IND,Dean Barkley,2267,10.31
+04,Beltrami,U.S. Senate,,LIB,,139,0.63
+04,Beltrami,U.S. Senate,,R,Norm Coleman,9454,43.00
+05,Benton,President,,CP,,77,0.40
+05,Benton,President,,DFL,Barack Obama,8454,43.88
+05,Benton,President,,GP,Cynthia McKinney,42,0.22
+05,Benton,President,,IND,Ralph Nader,296,1.54
+05,Benton,President,,LIB,Bob Barr,53,0.28
+05,Benton,President,,R,John McCain,10338,53.66
+05,Benton,President,,SWP,,4,0.02
+05,Benton,U.S. Senate,,CP,,79,0.41
+05,Benton,U.S. Senate,,DFL,Al Franken,6485,33.79
+05,Benton,U.S. Senate,,IND,Dean Barkley,4071,21.21
+05,Benton,U.S. Senate,,LIB,,84,0.44
+05,Benton,U.S. Senate,,R,Norm Coleman,8473,44.15
+06,Big Stone,President,,CP,,4,0.13
+06,Big Stone,President,,DFL,Barack Obama,1552,52.01
+06,Big Stone,President,,GP,Cynthia McKinney,5,0.17
+06,Big Stone,President,,IND,Ralph Nader,44,1.47
+06,Big Stone,President,,LIB,Bob Barr,13,0.44
+06,Big Stone,President,,R,John McCain,1362,45.64
+06,Big Stone,President,,SWP,,4,0.13
+06,Big Stone,U.S. Senate,,CP,,8,0.27
+06,Big Stone,U.S. Senate,,DFL,Al Franken,1274,42.74
+06,Big Stone,U.S. Senate,,IND,Dean Barkley,476,15.97
+06,Big Stone,U.S. Senate,,LIB,,12,0.40
+06,Big Stone,U.S. Senate,,R,Norm Coleman,1211,40.62
+07,Blue Earth,President,,CP,,108,0.31
+07,Blue Earth,President,,DFL,Barack Obama,19325,55.33
+07,Blue Earth,President,,GP,Cynthia McKinney,90,0.26
+07,Blue Earth,President,,IND,Ralph Nader,475,1.36
+07,Blue Earth,President,,LIB,Bob Barr,132,0.38
+07,Blue Earth,President,,R,John McCain,14782,42.32
+07,Blue Earth,President,,SWP,,15,0.04
+07,Blue Earth,U.S. Senate,,CP,,121,0.35
+07,Blue Earth,U.S. Senate,,DFL,Al Franken,14483,41.78
+07,Blue Earth,U.S. Senate,,IND,Dean Barkley,6182,17.83
+07,Blue Earth,U.S. Senate,,LIB,,219,0.63
+07,Blue Earth,U.S. Senate,,R,Norm Coleman,13660,39.41
+08,Brown,President,,CP,,47,0.35
+08,Brown,President,,DFL,Barack Obama,5809,42.81
+08,Brown,President,,GP,Cynthia McKinney,30,0.22
+08,Brown,President,,IND,Ralph Nader,188,1.39
+08,Brown,President,,LIB,Bob Barr,36,0.27
+08,Brown,President,,R,John McCain,7456,54.94
+08,Brown,President,,SWP,,4,0.03
+08,Brown,U.S. Senate,,CP,,40,0.30
+08,Brown,U.S. Senate,,DFL,Al Franken,4435,32.73
+08,Brown,U.S. Senate,,IND,Dean Barkley,2684,19.81
+08,Brown,U.S. Senate,,LIB,,64,0.47
+08,Brown,U.S. Senate,,R,Norm Coleman,6329,46.70
+09,Carlton,President,,CP,,54,0.29
+09,Carlton,President,,DFL,Barack Obama,11501,62.66
+09,Carlton,President,,GP,Cynthia McKinney,31,0.17
+09,Carlton,President,,IND,Ralph Nader,178,0.97
+09,Carlton,President,,LIB,Bob Barr,40,0.22
+09,Carlton,President,,R,John McCain,6549,35.68
+09,Carlton,President,,SWP,,2,0.01
+09,Carlton,U.S. Senate,,CP,,72,0.39
+09,Carlton,U.S. Senate,,DFL,Al Franken,9521,51.94
+09,Carlton,U.S. Senate,,IND,Dean Barkley,2555,13.94
+09,Carlton,U.S. Senate,,LIB,,83,0.45
+09,Carlton,U.S. Senate,,R,Norm Coleman,6099,33.27
 10,Carver,President,,CP,,116,0.23
 10,Carver,President,,DFL,Barack Obama,20654,41.67
 10,Carver,President,,GP,Cynthia McKinney,62,0.13

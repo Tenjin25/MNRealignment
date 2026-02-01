@@ -1,0 +1,25 @@
+﻿================================================================================
+MINNESOTA ELECTION DATA VERIFICATION
+================================================================================
+
+================================================================================
+YEAR: 1990
+================================================================================
+.venv\Scripts\python.exe : Traceback (most recent call last):
+At line:1 char:1
++ .venv\Scripts\python.exe tools\verify_all_years.py 2>&1 | Out-File -E ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\Shama\OneDrive\Documents\Course_Materials\CPT-236\Side_Projects\MNRealignment\tools\verify_all_years.py", line 
+140, in <module>
+    verify_all_years()
+  File "C:\Users\Shama\OneDrive\Documents\Course_Materials\CPT-236\Side_Projects\MNRealignment\tools\verify_all_years.py", line 64, 
+in verify_all_years
+    print(f"\u2713 Offices found: {len(actual_offices)}")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\encodings\cp1252.py", 
+line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 0: character maps to <undefined>
