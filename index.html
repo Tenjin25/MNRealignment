@@ -1589,6 +1589,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'presidential': 'president',
             'governor': 'governor',
             'us_senate': 'us_senate',
+            'us_senate_special': 'us_senate_special',
             'attorney_general': 'attorney_general',
             'cfo': 'cfo',
             'agriculture_commissioner': 'agriculture_commissioner'
@@ -1639,6 +1640,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'President of the United States': 'president',
         'Governor': 'governor',
         'United States Senator': 'us_senate',
+        'United States Senator (Special Election)': 'us_senate_special',
         'Attorney General': 'attorney_general',
         'Chief Financial Officer': 'cfo',
         'Commissioner of Agriculture': 'agriculture_commissioner'
@@ -1768,7 +1770,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         spinner.innerHTML = '<svg width="18" height="18" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-dasharray="31.4 31.4" transform="rotate(-90 25 25)"/></svg>';
         sel.parentNode.insertBefore(spinner, sel.nextSibling);
       }
-      const contestTypes = ['president', 'governor', 'us_senate', 'us_senate_special', 'secretary_of_state', 'attorney_general', 'state_auditor'];
+      const contestTypes = ['president', 'us_senate', 'us_senate_special', 'governor', 'secretary_of_state', 'attorney_general', 'state_auditor'];
       // Precompute contest/year pairs in a single pass
       const contestYearPairs = {};
       csvData.forEach(row => {
