@@ -773,8 +773,8 @@ body {
   margin-bottom: 20px;
 }
 .findings-section h4 {
-  margin: 0 0 14px 0;
-  font-size: 17px;
+  margin: 0 0 16px 0;
+  font-size: 16px;
   font-weight: 600;
   color: #1f2937;
 }
@@ -782,27 +782,68 @@ body {
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
-  padding: 12px;
-  margin-bottom: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.finding-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 .finding-card h5 {
-  margin: 0 0 8px 0;
+  margin: 0 0 12px 0;
   color: #1f2937;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   border-bottom: 2px solid #3b82f6;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 }
 .finding-card p {
-  margin: 6px 0;
-  font-size: 14px;
+  margin: 8px 0;
+  font-size: 13px;
   line-height: 1.5;
   color: #374151;
 }
 .finding-card ul {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5;
+  margin: 8px 0;
+  padding-left: 20px;
+  color: #374151;
+}
+.finding-card strong {
+  color: #1f2937;
+  font-weight: 600;
+}
+.metric {
+  background: #dbeafe;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #1e40af;
+  display: inline-block;
+  margin: 1px 2px;
+  border: 1px solid #bfdbfe;
+  white-space: nowrap;
+}
+.metric.highlight {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  font-weight: 700;
+}
+.metric.dem-highlight {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #3b82f6;
+  font-weight: 700;
+}
+.metric.swing-highlight {
+  background: #fef9c3;
+  color: #92400e;
+  border: 1px solid #fde68a;
+  font-weight: 700;
 }
 /* Mobile: Better readability for research findings */
 @media (max-width: 768px) {
@@ -1003,27 +1044,27 @@ document.addEventListener('DOMContentLoaded', function() {
             <p><strong>The Stark Reality of Modern Realignment:</strong> Between Barack Obama's 2008 victory and 2024, Minnesota experienced a profound one-directional political realignment. Analysis of county-level presidential results reveals an unprecedented consolidation pattern: <strong>Democrats improved their margins in only 8 of Minnesota's 87 counties</strong>, while losing ground in <strong>70 counties</strong>. Even more striking, <strong>28 counties flipped from Obama 2008 to Trump 2024</strong>, while <strong>exactly zero counties flipped from Romney 2012 to Harris 2024</strong>.</p>
             
             <p><strong>The Metro Concentration Story:</strong> Of the 8 counties where Democrats gained margin between 2008-2024, <strong>6 are Twin Cities metropolitan counties</strong>:</p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li><strong>Hennepin County:</strong> Obama won by 29.1% (2008) → Harris won by 43.6% (2024) | <strong>Gain: +14.5 points</strong></li>
-              <li><strong>Ramsey County:</strong> Obama won by 34.6% (2008) → Harris won by 44.3% (2024) | <strong>Gain: +9.8 points</strong></li>
-              <li><strong>Carver County:</strong> McCain won by 15.4% (2008) → Trump won by 5.5% (2024) | <strong>Dem gain: +9.9 points</strong></li>
-              <li><strong>Dakota County:</strong> Obama won by 5.6% (2008) → Harris won by 13.1% (2024) | <strong>Gain: +7.5 points</strong></li>
-              <li><strong>Washington County:</strong> Obama won by 4.4% (2008) → Harris won by 9.1% (2024) | <strong>Gain: +4.7 points</strong></li>
-              <li><strong>Scott County:</strong> McCain won by 11.4% (2008) → Trump won by 8.7% (2024) | <strong>Dem gain: +2.7 points</strong></li>
+            <ul>
+              <li><strong>Hennepin County:</strong> <span class="metric dem-highlight">D+29.13% (2008)</span> → <span class="metric dem-highlight">D+43.64% (2024)</span> — <span class="metric swing-highlight">+14.51 point gain</span></li>
+              <li><strong>Ramsey County:</strong> <span class="metric dem-highlight">D+34.58% (2008)</span> → <span class="metric dem-highlight">D+44.33% (2024)</span> — <span class="metric swing-highlight">+9.75 point gain</span></li>
+              <li><strong>Carver County:</strong> <span class="metric">R+15.37% (2008)</span> → <span class="metric">R+5.51% (2024)</span> — <span class="metric swing-highlight">+9.86 point Dem gain</span></li>
+              <li><strong>Dakota County:</strong> <span class="metric dem-highlight">D+5.61% (2008)</span> → <span class="metric dem-highlight">D+13.14% (2024)</span> — <span class="metric swing-highlight">+7.53 point gain</span></li>
+              <li><strong>Washington County:</strong> <span class="metric dem-highlight">D+4.41% (2008)</span> → <span class="metric dem-highlight">D+9.09% (2024)</span> — <span class="metric swing-highlight">+4.68 point gain</span></li>
+              <li><strong>Scott County:</strong> <span class="metric">R+11.40% (2008)</span> → <span class="metric">R+8.66% (2024)</span> — <span class="metric swing-highlight">+2.74 point Dem gain</span></li>
             </ul>
-            <p>The only non-metro Democratic gains were Cook County (North Shore, very small population) and Mower County (contains Rochester with Mayo Clinic's college-educated workforce). This demonstrates that educational polarization, not geography alone, drives the realignment.</p>
+            <p>The only non-metro Democratic gains were <strong>Cook County</strong> (<span class="metric dem-highlight">D+23.90% (2008)</span> → <span class="metric dem-highlight">D+35.81% (2024)</span>, North Shore, very small population) and <strong>Mower County</strong> (<span class="metric highlight">R+19.58% (2008)</span> → <span class="metric highlight">R+10.67% (2024)</span>, contains Rochester with Mayo Clinic's college-educated workforce). This demonstrates that educational polarization, not geography alone, drives the realignment.</p>
             
             <p><strong>The Rural Collapse - Largest Democratic Losses (2008-2024):</strong> Rural Minnesota's transformation far exceeds the modest metro gains:</p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li><strong>Murray County:</strong> Obama +24.3% (2008) → Trump +43.1% (2024) | <strong>Loss: -67.4 points</strong></li>
-              <li><strong>Marshall County:</strong> Obama +0.6% (2008) → Trump +52.5% (2024) | <strong>Loss: -53.0 points</strong></li>
-              <li><strong>Pipestone County:</strong> Obama +1.6% (2008) → Trump +48.9% (2024) | <strong>Loss: -50.5 points</strong></li>
-              <li><strong>Swift County:</strong> Obama +14.2% (2008) → Trump +34.7% (2024) | <strong>Loss: -48.9 points</strong></li>
-              <li><strong>Nobles County:</strong> Obama +10.8% (2008) → Trump +36.1% (2024) | <strong>Loss: -46.9 points</strong></li>
+            <ul>
+              <li><strong>Murray County:</strong> <span class="metric dem-highlight">D+24.25% (2008)</span> → <span class="metric highlight">R+43.14% (2024)</span> — <span class="metric highlight">67.39 point loss</span></li>
+              <li><strong>Marshall County:</strong> <span class="metric dem-highlight">D+0.57% (2008)</span> → <span class="metric highlight">R+52.45% (2024)</span> — <span class="metric highlight">53.02 point loss</span></li>
+              <li><strong>Pipestone County:</strong> <span class="metric dem-highlight">D+1.59% (2008)</span> → <span class="metric highlight">R+48.86% (2024)</span> — <span class="metric highlight">50.45 point loss</span></li>
+              <li><strong>Swift County:</strong> <span class="metric dem-highlight">D+14.20% (2008)</span> → <span class="metric highlight">R+34.73% (2024)</span> — <span class="metric highlight">48.93 point loss</span></li>
+              <li><strong>Nobles County:</strong> <span class="metric dem-highlight">D+10.75% (2008)</span> → <span class="metric highlight">R+36.14% (2024)</span> — <span class="metric highlight">46.89 point loss</span></li>
             </ul>
             
             <p><strong>Geographic Scope:</strong> The rightward shift encompasses virtually all of Greater Minnesota outside the seven-county metro area. The transformation is most pronounced in:</p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
+            <ul>
               <li><strong>Northwestern Minnesota:</strong> Counties like Polk, Marshall, and Roseau that were DFL strongholds through the 1990s now consistently vote Republican by 20-40 points</li>
               <li><strong>Southwestern Agricultural Belt:</strong> Redwood, Yellow Medicine, and Lyon counties show Republican margins exceeding 30 points in recent elections, compared to single-digit DFL margins in 1990</li>
               <li><strong>Central Minnesota:</strong> Morrison, Todd, and Crow Wing counties have shifted from competitive swing counties to safe Republican territory</li>
@@ -1031,13 +1072,35 @@ document.addEventListener('DOMContentLoaded', function() {
             </ul>
             
             <p><strong>Key Inflection Points:</strong></p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li><strong>1998:</strong> Jesse Ventura's Reform Party gubernatorial victory disrupted traditional DFL-Republican dynamics and signaled voter discontent with establishment politics</li>
+            <ul>
+              <li><strong>1990:</strong> Arne Carlson (R) elected governor and Collin Peterson (DFL) elected to Congress (7th District) — both would serve through the 1990s as the last generation before realignment began</li>
+              <li><strong>1994:</strong> Carlson's re-election remains the last time a Republican won Minnesota's governorship by outright majority</li>
+              <li><strong>1998:</strong> <span class="metric swing-highlight">Jesse Ventura's Reform Party gubernatorial victory</span> disrupted traditional DFL-Republican dynamics and signaled voter discontent with establishment politics, foreshadowing future populist movements</li>
               <li><strong>2004:</strong> First clear signs of rural erosion for DFL in presidential race, despite Kerry winning statewide</li>
               <li><strong>2010:</strong> Tea Party wave accelerated rural shift, with many historically DFL counties flipping decisively Republican</li>
               <li><strong>2016:</strong> Trump's performance in rural Minnesota exceeded previous Republican candidates by 10-15 points in many counties</li>
+              <li><strong>2016-2020:</strong> Collin Peterson's margins in Minnesota's 7th District eroded dramatically in the Trump era despite his 30-year incumbency advantage</li>
+              <li><strong>2020:</strong> <span class="metric highlight">Collin Peterson ousted</span> — Defeated by former Lt. Governor Michelle Fischbach after representing rural western Minnesota since 1990, symbolizing the complete rural realignment</li>
               <li><strong>2020-2024:</strong> Consolidation of Republican dominance in rural areas, with few signs of DFL recovery</li>
             </ul>
+            
+            <p><strong>The Death of the Farmer-Labor Coalition:</strong></p>
+            <p>The "FL" (Farmer-Labor) in DFL once represented a powerful alliance between urban union workers and rural farmers, forged in the 1944 party merger. By 2016, this coalition had collapsed completely, with DFL candidates largely confined to cities and suburbs. <strong>Amy Klobuchar</strong> remains the only statewide DFL politician maintaining significant rural appeal, continuing to win counties that vote heavily Republican in other races.</p>
+            
+            <p><strong>2016 Congressional Warning Signs:</strong></p>
+            <ul>
+              <li><strong>Tim Walz (1st District):</strong> Narrowly won re-election even as his southern Minnesota district voted for Trump. Walz, who had represented the district since 2007, recognized the erosion and ran for Governor in 2018, winning statewide but never returning to rural congressional politics. He now serves as Governor (2019-present).</li>
+              <li><strong>Rick Nolan (8th District):</strong> Barely survived re-election in the Iron Range district he had represented since 2013 (and previously 1975-1981), despite his district voting heavily for Trump. Nolan retired in 2018 rather than face another difficult race. He passed away in 2022.</li>
+            </ul>
+            
+            <p><strong>Post-2018 Republican Consolidation:</strong></p>
+            <ul>
+              <li><strong>1st District:</strong> Jim Hagedorn (R) won in 2018, held until his death in 2022. Brad Finstad (R) won the 2022 special election and cruised to re-election in 2024. The seat is now considered <span class="metric highlight">safe Republican</span>.</li>
+              <li><strong>8th District:</strong> Pete Stauber (R) won in 2018 and has held the seat comfortably since. The former DFL Iron Range stronghold is now <span class="metric highlight">safe Republican</span>.</li>
+            </ul>
+            
+            <p><strong>Historical Significance:</strong> These districts were DFL strongholds for generations. Their conversion to safe Republican seats in a single election cycle (2016-2018) demonstrates how completely the Farmer-Labor coalition has disintegrated. Modern DFL success depends entirely on overwhelming metro margins, as the party's rural "Farmer-Labor" identity exists in name only.</p>
+          </div>
             
             <p><strong>Socioeconomic Drivers:</strong></p>
             <ul style="margin: 8px 0; padding-left: 24px;">
@@ -1055,24 +1118,26 @@ document.addEventListener('DOMContentLoaded', function() {
             <h5>2️⃣ The Iron Range: A Case Study in Working-Class Realignment</h5>
             <p><strong>Historical Context:</strong> The Iron Range of northeastern Minnesota represents one of the most significant political realignments in American electoral history. From the 1930s through the 1990s, this region was among the most reliably Democratic areas in the nation, rooted in labor union strength and New Deal politics.</p>
             
-            <p><strong>St. Louis County Transformation:</strong></p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li><strong>1992 Presidential:</strong> Clinton won St. Louis County by 20+ points (typical DFL performance 1930s-1990s)</li>
-              <li><strong>2004 Presidential:</strong> Kerry won by 13 points (first signs of erosion)</li>
-              <li><strong>2016 Presidential:</strong> Clinton won by just 6 points (dramatic acceleration of shift)</li>
-              <li><strong>2020 Presidential:</strong> Biden won by only 5 points despite strong statewide performance</li>
-              <li><strong>2024 Trends:</strong> Continued tightening in margins, with range towns increasingly competitive</li>
+            <p><strong>St. Louis County Presidential Results - The Numbers Tell the Story:</strong></p>
+            <ul>
+              <li><strong>2008:</strong> <span class="metric dem-highlight">D+33.26%</span> — Dominant Democratic</li>
+              <li><strong>2012:</strong> <span class="metric dem-highlight">D+30.44%</span> — Dominant Democratic</li>
+              <li><strong>2016:</strong> <span class="metric dem-highlight">D+12.83%</span> — Safe Democratic</li>
+              <li><strong>2020:</strong> <span class="metric dem-highlight">D+16.01%</span> — Safe Democratic</li>
+              <li><strong>2024:</strong> <span class="metric dem-highlight">D+13.98%</span> — Safe Democratic</li>
             </ul>
             
+            <p><strong>The Dramatic Erosion:</strong> St. Louis County's collapse from <span class="metric dem-highlight">D+33.26% (2008)</span> to <span class="metric dem-highlight">D+13.98% (2024)</span> represents a <span class="metric highlight">19.28-point loss</span> in just 16 years. This stunning erosion would have turned the county Republican if not for one critical factor: <strong>Duluth</strong>.</p>
+            
             <p><strong>Geographic Divide Within the County:</strong></p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li><strong>Duluth (Urban Core):</strong> Remains solidly Democratic, typically 60-70% DFL in recent elections. College-educated professionals and service economy workers maintain traditional liberal voting patterns</li>
-              <li><strong>Iron Range Communities:</strong> Virginia, Hibbing, Eveleth, and smaller mining towns have shifted dramatically Republican. Trump won many of these communities by 10-15 points in 2016 and 2020</li>
-              <li><strong>Rural Areas:</strong> Townships and unincorporated areas show Republican margins exceeding 30 points, compared to DFL margins of similar size in the 1990s</li>
+            <ul>
+              <li><strong>Duluth (Urban Core):</strong> Remains solidly Democratic at <span class="metric dem-highlight">65-70% DFL</span> in recent elections. College-educated professionals and service economy workers maintain traditional liberal voting patterns</li>
+              <li><strong>Iron Range Communities:</strong> Virginia, Hibbing, Eveleth, and smaller mining towns have shifted dramatically Republican. Trump won many of these communities by <span class="metric highlight">10-15 points</span> in 2016 and 2020</li>
+              <li><strong>Rural Areas:</strong> Townships and unincorporated areas show Republican margins exceeding <span class="metric highlight">30 points</span>, compared to DFL margins of similar size in the 1990s</li>
             </ul>
             
             <p><strong>Economic and Industrial Factors:</strong></p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
+            <ul>
               <li><strong>Mining Industry Changes:</strong> Decline from peak employment in 1970s-80s, automation reducing workforce, environmental regulations creating tensions with traditional DFL environmental stances</li>
               <li><strong>Union Decline:</strong> Weakening of labor union power, decreased union household percentages, generational shift away from union-based political identity</li>
               <li><strong>Trade Policy Tensions:</strong> Perception that DFL/Democratic positions on trade harmed mining and manufacturing interests</li>
@@ -1080,28 +1145,17 @@ document.addEventListener('DOMContentLoaded', function() {
             </ul>
             
             <p><strong>Demographic Shifts:</strong></p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
+            <ul>
               <li><strong>Population Decline:</strong> Young people leaving for opportunities elsewhere, aging population more culturally conservative</li>
               <li><strong>Ethnic Heritage:</strong> Historically strong immigrant communities (Finnish, Italian, Slavic) that formed union base have dispersed or assimilated, weakening ethnic-based political solidarity</li>
               <li><strong>Educational Attainment:</strong> Lower college completion rates correlate with Republican shift, matching national educational polarization patterns</li>
             </ul>
             
-            <p><strong>St. Louis County Presidential Results - The Numbers Tell the Story:</strong></p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li><strong>2008:</strong> Obama 77,351 (66.5%) vs McCain 38,742 (33.3%) | DFL margin: +33.3%, Category: Dominant Democratic</li>
-              <li><strong>2012:</strong> Obama 73,378 (65.2%) vs Romney 39,131 (34.8%) | DFL margin: +30.4%, Category: Dominant Democratic</li>
-              <li><strong>2016:</strong> Clinton 57,771 (56.4%) vs Trump 44,630 (43.6%) | DFL margin: +12.8%, Category: Safe Democratic</li>
-              <li><strong>2020:</strong> Biden 67,704 (58.0%) vs Trump 49,017 (42.0%) | DFL margin: +16.0%, Category: Safe Democratic</li>
-              <li><strong>2024:</strong> Harris 66,335 (57.0%) vs Trump 50,065 (43.0%) | DFL margin: +14.0%, Category: Safe Democratic</li>
-            </ul>
+            <p><strong>The Duluth Factor - Why St. Louis County Stays Blue:</strong> St. Louis County's sustained Democratic performance despite the Iron Range's rightward lurch can be attributed to one critical factor: <strong>Duluth</strong>. The city of Duluth (population ~86,000) represents approximately 40% of the county's population and votes overwhelmingly Democratic, typically <span class="metric dem-highlight">65-70% DFL</span> in presidential elections. Without Duluth's urban Democratic vote, the Iron Range and rural portions of St. Louis County would deliver solid Republican margins.</p>
             
-            <p><strong>The Duluth Factor - Why St. Louis County Stays Blue:</strong> St. Louis County's sustained Democratic performance despite the Iron Range's rightward lurch can be attributed to one critical factor: <strong>Duluth</strong>. The city of Duluth (population ~86,000) represents approximately 40% of the county's population and votes overwhelmingly Democratic, typically 65-70% DFL in presidential elections. Without Duluth's urban Democratic vote, the Iron Range and rural portions of St. Louis County would deliver solid Republican margins.</p>
+            <p><strong>The Mathematics of Urban Salvation:</strong> Duluth's concentrated Democratic vote essentially cancels out Republican advantages across the vast geography of the Iron Range and rural St. Louis County. While mining towns like Virginia, Hibbing, Eveleth, and Chisholm have trended heavily Republican (many now voting <span class="metric highlight">55-65% Trump</span>), and rural townships deliver <span class="metric highlight">60-70% Republican</span> margins, Duluth generates enough absolute Democratic votes to keep the county's overall total in the DFL column. This pattern - a college-educated, diverse urban center offsetting a working-class, predominantly white hinterland - mirrors dynamics in countless American counties.</p>
             
-            <p><strong>The Mathematics of Urban Salvation:</strong> Duluth's concentrated Democratic vote essentially cancels out Republican advantages across the vast geography of the Iron Range and rural St. Louis County. While mining towns like Virginia, Hibbing, Eveleth, and Chisholm have trended heavily Republican (many now voting 55-65% Trump), and rural townships deliver 60-70% Republican margins, Duluth generates enough absolute Democratic votes to keep the county's overall total in the DFL column. This pattern - a college-educated, diverse urban center offsetting a working-class, predominantly white hinterland - mirrors dynamics in countless American counties.</p>
-            
-            <p><strong>Counterfactual Analysis:</strong> If Duluth were hypothetically removed from St. Louis County's vote totals, the remainder would likely vote Republican by 10-15 points in recent elections, making it indistinguishable from neighboring rural counties. Duluth alone is the reason St. Louis County remains categorized as "Safe Democratic" rather than trending toward "Lean Republican" or worse. The city's presence prevents what would otherwise be a complete Republican takeover of northeastern Minnesota.</p>
-            
-            <p><strong>Symbolic Importance:</strong> St. Louis County's collapse from a 33-point Democratic stronghold (2008) to a competitive Safe Democratic category (14 points in 2024) represents a stunning 19-point erosion in just 16 years. Yet the county stubbornly remains Democratic solely because of Duluth's urban vote. This demonstrates both the dramatic Iron Range realignment AND the power of even mid-sized cities (Duluth is Minnesota's 4th largest) to anchor Democratic performance in otherwise unfavorable territory.</p>
+            <p><strong>Counterfactual Analysis:</strong> If Duluth were hypothetically removed from St. Louis County's vote totals, the remainder would likely vote Republican by <span class="metric highlight">10-15 points</span> in recent elections, making it indistinguishable from neighboring rural counties. Duluth alone is the reason St. Louis County remains categorized as "Safe Democratic" rather than trending toward "Lean Republican" or worse. The city's presence prevents what would otherwise be a complete Republican takeover of northeastern Minnesota.</p>
           </div>
 
           <div class="finding-card">
@@ -1109,15 +1163,15 @@ document.addEventListener('DOMContentLoaded', function() {
             <p><strong>Geographic Context:</strong> Itasca County in north-central Minnesota, home to Grand Rapids and the headwaters of the Mississippi River, exemplifies the Obama-to-Trump voter phenomenon. This former DFL county represents the working-class realignment that reshaped American politics.</p>
             
             <p><strong>The Complete Trajectory (2008-2024):</strong></p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li><strong>2008:</strong> Obama 13,460 (56.6%) vs McCain 10,309 (43.4%) | Obama +13.3%, Category: Safe Democratic</li>
-              <li><strong>2012:</strong> Obama 12,852 (55.0%) vs Romney 10,501 (45.0%) | Obama +10.1%, Category: Likely Democratic</li>
-              <li><strong>2016:</strong> <strong>THE FLIP:</strong> Trump 12,920 (58.9%) vs Clinton 9,015 (41.1%) | Trump +17.8%, Category: Safe Republican</li>
-              <li><strong>2020:</strong> Trump 15,239 (58.6%) vs Biden 10,786 (41.4%) | Trump +17.1%, Category: Safe Republican</li>
-              <li><strong>2024:</strong> Trump 15,863 (60.2%) vs Harris 10,467 (39.8%) | Trump +20.5%, Category: Stronghold Republican</li>
+            <ul>
+              <li><strong>2008:</strong> <span class="metric dem-highlight">D+13.26%</span> — Safe Democratic</li>
+              <li><strong>2012:</strong> <span class="metric dem-highlight">D+10.07%</span> — Likely Democratic</li>
+              <li><strong>2016:</strong> <strong>THE FLIP:</strong> <span class="metric highlight">R+17.80%</span> — Safe Republican</li>
+              <li><strong>2020:</strong> <span class="metric highlight">R+17.11%</span> — Safe Republican</li>
+              <li><strong>2024:</strong> <span class="metric highlight">R+20.49%</span> — Stronghold Republican</li>
             </ul>
             
-            <p><strong>Total Swing Analysis:</strong> From Obama winning by 13.3 points (2008) to Trump winning by 20.5 points (2024) represents a <strong>33.8-point swing</strong> over 16 years. The county went from voting 10 points more Democratic than the nation in 2008 to voting 15 points more Republican than the nation in 2024.</p>
+            <p><strong>Total Swing Analysis:</strong> From <span class="metric dem-highlight">D+13.26% (2008)</span> to <span class="metric highlight">R+20.49% (2024)</span> represents a <span class="metric swing-highlight">33.75-point swing</span> over 16 years. The county went from voting 10 points more Democratic than the nation in 2008 to voting 15 points more Republican than the nation in 2024.</p>
             
             <p><strong>Socioeconomic Profile:</strong> Itasca County's economy centers on forestry, paper mills, tourism, and mining-related industries. The county has lower educational attainment than state averages, an aging population, and has experienced decades of economic restructuring as traditional industries declined. These factors perfectly align with the demographic groups that have realigned toward Republicans nationally.</p>
             
@@ -1129,19 +1183,19 @@ document.addEventListener('DOMContentLoaded', function() {
             <p><strong>The State's Political Center of Gravity:</strong> Hennepin County, home to Minneapolis and containing over 1.2 million residents (22% of Minnesota's population), has become the indispensable foundation of DFL political power. While rural Minnesota has hemorrhaged Democratic support, Hennepin has moved in the opposite direction, generating ever-larger Democratic margins.</p>
             
             <p><strong>Presidential Results - Growing Democratic Dominance (2008-2024):</strong></p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li><strong>2008:</strong> Obama 420,958 (64.6%) vs McCain 231,054 (35.4%) | Raw margin: +189,904 votes | Margin %: +29.1%</li>
-              <li><strong>2012:</strong> Obama 423,982 (63.8%) vs Romney 240,073 (36.2%) | Raw margin: +183,909 votes | Margin %: +27.7%</li>
-              <li><strong>2016:</strong> Clinton 429,288 (69.1%) vs Trump 191,770 (30.9%) | Raw margin: +237,518 votes | Margin %: +38.2%</li>
-              <li><strong>2020:</strong> Biden 532,623 (72.1%) vs Trump 205,973 (27.9%) | Raw margin: +326,650 votes | Margin %: +44.2%</li>
-              <li><strong>2024:</strong> Harris 502,710 (71.8%) vs Trump 197,244 (28.2%) | Raw margin: +305,466 votes | Margin %: +43.6%</li>
+            <ul>
+              <li><strong>2008:</strong> <span class="metric dem-highlight">D+29.13%</span> (189,904 vote margin)</li>
+              <li><strong>2012:</strong> <span class="metric dem-highlight">D+27.69%</span> (183,909 vote margin)</li>
+              <li><strong>2016:</strong> <span class="metric dem-highlight">D+38.24%</span> (237,518 vote margin)</li>
+              <li><strong>2020:</strong> <span class="metric dem-highlight">D+44.23%</span> (326,650 vote margin)</li>
+              <li><strong>2024:</strong> <span class="metric dem-highlight">D+43.64%</span> (305,466 vote margin)</li>
             </ul>
             
             <p><strong>The Math That Wins Elections:</strong> Hennepin County's transformation tells a remarkable story:</p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li>Obama's 2008 margin of 189,904 votes was already dominant, but represented "only" a 29.1% spread</li>
-              <li>By 2020, Biden increased the raw vote margin to 326,650 votes - a <strong>72% increase in absolute Democratic advantage</strong></li>
-              <li>The percentage margin grew from 29.1% to 44.2% - a <strong>15.1-point increase</strong> in Democratic dominance</li>
+            <ul>
+              <li>Obama's 2008 margin of 189,904 votes was already dominant at <span class="metric dem-highlight">D+29.13%</span></li>
+              <li>By 2020, Biden increased the margin to <span class="metric dem-highlight">D+44.23%</span> — a <span class="metric swing-highlight">15.10-point increase</span> in Democratic dominance</li>
+              <li>The raw vote margin grew from 189,904 to 326,650 votes — a <strong>72% increase in absolute Democratic advantage</strong></li>
               <li>Hennepin alone provided more Democratic votes in 2020 than 76 other counties combined provided Republican votes</li>
               <li>Even in 2024 when Harris received fewer votes than Biden, her 305,466-vote margin still exceeded Obama's 2008 margin by 61%</li>
             </ul>
@@ -1162,12 +1216,12 @@ document.addEventListener('DOMContentLoaded', function() {
             <p><strong>Why Minnesota Isn't a Swing State:</strong> Ramsey County (St. Paul) is the answer to a critical question: Why does Minnesota remain reliably Democratic while states like Wisconsin, Arizona, North Carolina, and Georgia swing between parties? The answer lies in Ramsey County's role as Minnesota's equivalent to Cook County, Illinois (Chicago). Just as Chicago's overwhelming Democratic margins make Illinois uncompetitive despite downstate Republican dominance, St. Paul and Ramsey County provide an insurmountable Democratic firewall that keeps Minnesota blue.</p>
             
             <p><strong>Presidential Results - Consistent Democratic Fortress (2008-2024):</strong></p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li><strong>2008:</strong> Obama 186,854 (68.4%) vs McCain 86,377 (31.6%) | Raw margin: +100,477 votes | Margin %: +36.8%</li>
-              <li><strong>2012:</strong> Obama 186,834 (67.3%) vs Romney 90,696 (32.7%) | Raw margin: +96,138 votes | Margin %: +34.6%</li>
-              <li><strong>2016:</strong> Clinton 187,556 (71.9%) vs Trump 73,298 (28.1%) | Raw margin: +114,258 votes | Margin %: +43.8%</li>
-              <li><strong>2020:</strong> Biden 229,488 (74.1%) vs Trump 80,244 (25.9%) | Raw margin: +149,244 votes | Margin %: +48.2%</li>
-              <li><strong>2024:</strong> Harris 205,897 (73.2%) vs Trump 75,013 (26.8%) | Raw margin: +130,884 votes | Margin %: +46.5%</li>
+            <ul>
+              <li><strong>2008:</strong> <span class="metric dem-highlight">D+34.58%</span> (100,477 vote margin)</li>
+              <li><strong>2012:</strong> <span class="metric dem-highlight">D+36.11%</span> (96,138 vote margin)</li>
+              <li><strong>2016:</strong> <span class="metric dem-highlight">D+42.97%</span> (114,258 vote margin)</li>
+              <li><strong>2020:</strong> <span class="metric dem-highlight">D+46.45%</span> (149,244 vote margin)</li>
+              <li><strong>2024:</strong> <span class="metric dem-highlight">D+44.33%</span> (130,884 vote margin)</li>
             </ul>
             
             <p><strong>Remarkable Consistency - The 100,000-Vote Democratic Floor:</strong> What makes Ramsey County extraordinary is not just that it votes heavily Democratic, but that it has provided a <strong>minimum Democratic margin of 96,000 votes in every presidential election since 2008</strong>, typically exceeding 100,000 votes. Even in Harris's 2024 performance, when Democrats underperformed compared to 2020 in many places, Ramsey still delivered 130,884 Democratic votes - a margin larger than the total population of 60 Minnesota counties combined.</p>
@@ -1203,15 +1257,15 @@ document.addEventListener('DOMContentLoaded', function() {
             <p><strong>Minnesota's Most Competitive County:</strong> Dakota County, the third-most populous county with 440,000 residents, represents the new American political battleground: diverse, educated, economically mixed suburbs where neither party has a structural advantage. It contains affluent tech workers, working-class service employees, longtime residents, and new immigrants - a microcosm of suburban America.</p>
             
             <p><strong>Presidential Results - The Suburban Tug-of-War (2008-2024):</strong></p>
-            <ul style="margin: 8px 0; padding-left: 24px;">
-              <li><strong>2008:</strong> Obama 116,778 (52.8%) vs McCain 104,364 (47.2%) | Obama +5.6%, Category: Likely Democratic</li>
-              <li><strong>2012:</strong> Obama 116,255 (51.5%) vs Romney 109,516 (48.5%) | Obama +3.0%, Category: Lean Democratic</li>
-              <li><strong>2016:</strong> Clinton 110,483 (52.6%) vs Trump 99,583 (47.4%) | Clinton +5.2%, Category: Likely Democratic</li>
-              <li><strong>2020:</strong> Biden 146,155 (57.1%) vs Trump 109,638 (42.9%) | Biden +14.3%, Category: Safe Democratic</li>
-              <li><strong>2024:</strong> Harris 143,267 (56.6%) vs Trump 109,995 (43.4%) | Harris +13.1%, Category: Safe Democratic</li>
+            <ul>
+              <li><strong>2008:</strong> <span class="metric dem-highlight">D+5.61%</span> — Likely Democratic</li>
+              <li><strong>2012:</strong> <span class="metric dem-highlight">D+2.98%</span> — Lean Democratic</li>
+              <li><strong>2016:</strong> <span class="metric dem-highlight">D+5.19%</span> — Likely Democratic</li>
+              <li><strong>2020:</strong> <span class="metric dem-highlight">D+14.28%</span> — Safe Democratic</li>
+              <li><strong>2024:</strong> <span class="metric dem-highlight">D+13.14%</span> — Safe Democratic</li>
             </ul>
             
-            <p><strong>The 2020 Inflection Point:</strong> Dakota County's transformation is most visible in the stark difference between 2016 (Clinton +5.2%) and 2020 (Biden +14.3%). This 9-point surge represents the suburban realignment against Trump that defined the 2020 election:</p>
+            <p><strong>The 2020 Inflection Point:</strong> Dakota County's transformation is most visible in the stark difference between <span class="metric dem-highlight">D+5.19% (2016)</span> and <span class="metric dem-highlight">D+14.28% (2020)</span>. This <span class="metric swing-highlight">9.09-point surge</span> represents the suburban realignment against Trump that defined the 2020 election:</p>
             <ul style="margin: 8px 0; padding-left: 24px;">
               <li>College-educated suburban voters, particularly women, moved decisively toward Democrats</li>
               <li>Even working-class suburbs like West St. Paul showed modest Democratic gains</li>
@@ -1655,6 +1709,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         'president': 'President of the United States',
         'governor': 'Governor', 
         'us_senate': 'United States Senator',
+        'us_senate_special': 'United States Senator (Special Election)',
         'secretary_of_state': 'Secretary of State',
         'attorney_general': 'Attorney General',
         'state_auditor': 'State Auditor',
@@ -1713,7 +1768,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         spinner.innerHTML = '<svg width="18" height="18" viewBox="0 0 50 50"><circle cx="25" cy="25" r="20" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-dasharray="31.4 31.4" transform="rotate(-90 25 25)"/></svg>';
         sel.parentNode.insertBefore(spinner, sel.nextSibling);
       }
-      const contestTypes = ['president', 'governor', 'us_senate', 'secretary_of_state', 'attorney_general', 'state_auditor'];
+      const contestTypes = ['president', 'governor', 'us_senate', 'us_senate_special', 'secretary_of_state', 'attorney_general', 'state_auditor'];
       // Precompute contest/year pairs in a single pass
       const contestYearPairs = {};
       csvData.forEach(row => {
@@ -1730,6 +1785,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         'president': 'Presidential Elections',
         'governor': 'Gubernatorial Elections',
         'us_senate': 'U.S. Senate Elections',
+        'us_senate_special': 'U.S. Senate Special Elections',
         'secretary_of_state': 'Secretary of State Elections',
         'attorney_general': 'Attorney General Elections',
         'state_auditor': 'State Auditor Elections'

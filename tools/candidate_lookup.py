@@ -109,6 +109,12 @@ CANDIDATES = {
     (2010, 'Governor', 'R'): 'Tom Emmer',
     (2010, 'Governor', 'DFL'): 'Mark Dayton',
     (2010, 'Governor', 'IND'): 'Tom Horner',
+    (2010, 'Attorney General', 'R'): 'Chris Barden',
+    (2010, 'Attorney General', 'DFL'): 'Lori Swanson',
+    (2010, 'Secretary of State', 'R'): 'Dan Severson',
+    (2010, 'Secretary of State', 'DFL'): 'Mark Ritchie',
+    (2010, 'State Auditor', 'R'): 'Pat Anderson',
+    (2010, 'State Auditor', 'DFL'): 'Rebecca Otto',
     
     # 2024
     (2024, 'President', 'R'): 'Donald Trump',
