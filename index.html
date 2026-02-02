@@ -957,6 +957,7 @@ body {
 // Accessibility: Color Blind Mode Toggle
 document.addEventListener('DOMContentLoaded', function() {
   var accBtn = document.getElementById('accessibility-toggle');
+  var labelsBtn = document.getElementById('labels-toggle');
   function updateLegendColors() {
     var colorblind = document.body.classList.contains('colorblind-mode');
     var legendColors = document.querySelectorAll('.legend-color');
@@ -1006,6 +1007,27 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     };
   }
+  
+  // County Labels Toggle
+  if (labelsBtn) {
+    labelsBtn.onclick = function() {
+      if (map.getLayer('county-label')) {
+        const currentVisibility = map.getLayoutProperty('county-label', 'visibility');
+        const newVisibility = currentVisibility === 'visible' ? 'none' : 'visible';
+        map.setLayoutProperty('county-label', 'visibility', newVisibility);
+        
+        // Update button appearance
+        if (newVisibility === 'none') {
+          labelsBtn.style.opacity = '0.5';
+          labelsBtn.title = 'Show County Labels';
+        } else {
+          labelsBtn.style.opacity = '1';
+          labelsBtn.title = 'Hide County Labels';
+        }
+      }
+    };
+  }
+  
   updateLegendColors(); // Ensure correct colors on load
 });
 </script>
@@ -1470,6 +1492,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div style="display:flex;align-items:center;gap:8px;">
                   <label>📊 Contest Type:</label>
                   <button id="accessibility-toggle" title="Accessibility: Color Blind Mode" style="background:#1f2937;color:#fff;border-radius:50%;width:32px;height:32px;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.10);font-size:18px;display:flex;align-items:center;justify-content:center;cursor:pointer;">♿</button>
+                  <button id="labels-toggle" title="Toggle County Labels" style="background:#1f2937;color:#fff;border-radius:50%;width:32px;height:32px;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.10);font-size:16px;display:flex;align-items:center;justify-content:center;cursor:pointer;">🏷️</button>
                 </div>
                 <select id="contestSelect">
                     <option value="">Select a Contest...</option>
