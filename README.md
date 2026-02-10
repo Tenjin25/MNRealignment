@@ -29,7 +29,7 @@ The map supports:
 - **58 Statewide Contests** (1990-2024 general elections)
 - **Office filtering**: President, US Senate (including 2018 Special), Governor, Attorney General, Secretary of State, State Auditor
 - **Interactive county tooltips**: Detailed vote counts, margins, and candidate names
-- **Color-coded competitiveness ratings**: Six-tier system from Dominant to Competitive
+- **Color-coded competitiveness ratings**: Seven-tier system from Annihilation to Tilt
 - **Colorblind-friendly mode**: Alternative palette for accessibility
 - **Research findings**: 7 detailed analysis cards with exact margin percentages from verified data
 
@@ -287,7 +287,7 @@ These two counties alone generate sufficient Democratic votes to offset Republic
 All 8 counties with Democratic gains have either:
 1. Major university presence (Hennepin - U of M, St. Louis - UMD)
 2. High college attainment (Carver, Dakota, Washington - suburban professional)
-3. Specialized educated workforce (Mower - Mayo Clinic Rochester)
+3. Specialized educated workforce (Olmsted - Mayo Clinic Rochester)
 
 **Democratic Losses concentrated in:**
 - Counties with <25% bachelor's degree attainment
