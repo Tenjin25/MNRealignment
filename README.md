@@ -214,7 +214,7 @@ Counties are classified into **eight tiers** based on winning margin (mirrored f
 | **Tossup** | <0.50% | Neutral (#f7f7f7) | Clay County (D+0.48%) |
 | **Tilt** | 0.50-0.99% | Very Light | Nicollet County (R+0.51%) |
 | **Lean** | 1.00-5.49% | Light | Anoka County (R+4.55%), Rice County (R+2.56%) |
-| **Likely** | 5.50-9.99% | Light-Medium | Washington County (D+9.09%), Carver (R+5.51%) |
+| **Likely** | 5.50-9.99% | Light-Medium | Washington County (D+9.09%), Scott (R+8.49%) |
 | **Safe** | 10.00-19.99% | Medium | St. Louis County (D+13.98%), Dakota (D+13.14%) |
 | **Stronghold** | 20.00-29.99% | Dark | Itasca County (R+20.49%), Freeborn (R+21.61%) |
 | **Dominant** | 30.00-39.99% | Darkest | Cook County (D+35.81%), Swift (R+34.73%) |
