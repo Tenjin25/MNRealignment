@@ -895,6 +895,77 @@ body {
   }
 }
 
+/* Mobile: panel spacing and overlap prevention */
+@media (max-width: 768px) {
+  :root {
+    --mobile-controls-offset: 220px;
+  }
+  html, body {
+    height: 100dvh;
+  }
+  #map,
+  .sidebar {
+    height: 100dvh !important;
+  }
+  .sidebar {
+    top: calc(var(--mobile-controls-offset) + 8px) !important;
+    height: calc(100dvh - var(--mobile-controls-offset) - env(safe-area-inset-bottom) - 8px) !important;
+    border-radius: 14px 14px 0 0;
+    overflow: hidden;
+  }
+  .main-controls {
+    max-height: min(44vh, 420px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+  .main-controls.minimized {
+    max-height: none;
+    overflow: visible;
+    min-width: 60px !important;
+    max-width: 60px !important;
+    width: 60px !important;
+    padding: 15px !important;
+  }
+  .main-controls.minimized .controls-header {
+    justify-content: center !important;
+  }
+  .main-controls.minimized .controls-header h3 {
+    display: none !important;
+  }
+  .main-controls.minimized .controls-header > div {
+    width: 100%;
+    justify-content: center !important;
+    gap: 0 !important;
+  }
+  .legend {
+    top: calc(var(--mobile-controls-offset) + 8px) !important;
+    bottom: calc(env(safe-area-inset-bottom) + 8px) !important;
+    max-height: calc(100dvh - var(--mobile-controls-offset) - env(safe-area-inset-bottom) - 16px) !important;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .legend.minimized {
+    top: auto !important;
+    bottom: env(safe-area-inset-bottom) !important;
+    max-height: 56px !important;
+  }
+  .legend-content,
+  .sidebar-content {
+    padding-bottom: calc(18px + env(safe-area-inset-bottom)) !important;
+  }
+  .control-group select,
+  #county-search {
+    font-size: 16px !important;
+  }
+  .status-panel {
+    left: 12px !important;
+    right: 12px !important;
+    width: auto !important;
+    max-width: none !important;
+    bottom: calc(12px + env(safe-area-inset-bottom)) !important;
+  }
+}
+
 /* End of styles */
 
 .metric {
@@ -2145,6 +2216,7 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         minimizeBtn.textContent = '+';
         minimizeBtn.title = 'Expand legend';
       }
+      updateMobilePanelOffsets();
     }
 
     // Toggles the visibility of the main controls panel, minimizing or expanding it based on its current state.
@@ -2166,7 +2238,25 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
         minimizeBtn.textContent = '+';
         minimizeBtn.title = 'Expand controls';
       }
+      updateMobilePanelOffsets();
     }
+
+    function updateMobilePanelOffsets() {
+      if (window.innerWidth > 768) return;
+      const controls = document.getElementById('main-controls');
+      if (!controls) return;
+      const controlsHeight = controls.classList.contains('minimized')
+        ? 64
+        : Math.ceil(controls.getBoundingClientRect().height);
+      document.documentElement.style.setProperty('--mobile-controls-offset', `${controlsHeight + 12}px`);
+    }
+
+    window.addEventListener('resize', updateMobilePanelOffsets);
+    window.addEventListener('orientationchange', updateMobilePanelOffsets);
+    document.addEventListener('DOMContentLoaded', function() {
+      updateMobilePanelOffsets();
+      setTimeout(updateMobilePanelOffsets, 120);
+    });
 
     function showCountyDetails(countyName) {
       // --- NC Map Card-Style Sidebar ---
@@ -3469,6 +3559,4 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
   </script>
 </body>
 </html>
-
-
 
